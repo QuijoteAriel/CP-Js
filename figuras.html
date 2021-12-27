@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Figuras Geometricas en JavaScript</title>
+</head>
+<body>
+    <h1> Figuras Geometricas</h1>
+    <h2> Calcula el Area y Perimetro de tu Cuadrado </h2>
+    <form>
+        <label>
+            Escribe cuanto mide el lado de tu cuadrado: 
+        </label>
+        <br>
+        <input id="InputCuadrado" type="number"/>
+        <br>
+        Calcula el Perimetro
+        <button type ="button" onclick= "calculaPerimetro()"> Calcula el Perimetro</button>
+        <br>
+        Calcula el Area
+        <button type="button" onclick= "calculoArea()"> Calcula el Area</button>
+
+    </form>
+
+    <h2> Calcula  el Area y Perimetrode tu triangulo </h2>
+    <form>
+        <label> Escribe los datos de tu triangulo</label>
+        <br>
+        <input id="inptutLado1" type="number" placeholder="Lado 1"/>
+        <br>
+        <input id="inptutLado2" type="number" placeholder= "Lado 2" />
+        <br>
+        <input id="inptutBase" type="number" placeholder="Base del triangulo" />
+        <br>
+        <input id="inptutAltura" type="number" placeholder="Altura del triangulo" />
+        <br>
+        <button type="button" onclick="calculoPerimetroTriangulo()" > Calcula El Perimetro del Traingulo </button>
+        <br>
+        <button type="button" onclick="calculaAreaTriangulo()" > Calcula El Area del Traingulo </button>
+        <br>
+        <button type="button" onclick="trianguloIsoseles()" > Calcula El Area del Traingulo Isoseles </button>
+    </form>
+    <h2> Calcula el Diametro y Area de tu Circulo</h2>
+<form>
+    <label> Escribe el Radio de Tu Circulo</label>
+    <br>
+    <input id="radioCirculo" type="number" placeholder="Radio en cm"/>
+    <br>
+    <button type="button" onclick= "calculoDiametrCirculo()"> Calcula el Diametro del Circulo</button>
+    <br>
+    <button type="button" onclick= "calculoAreaCirculo()"> Calcula el Area del Circulo</button>
+</form>
+
+    <script src="./figuras.js"></script>
+</body>
+</html>
